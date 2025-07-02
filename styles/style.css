@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Canela";
+  src: url("/fonts/Canela-Medium-Trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #d6ef0e;
+  --secondary-color-1: #1e1e1e;
+  --secondary-color-2: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #090f1d;
+}
