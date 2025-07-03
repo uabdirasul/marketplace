@@ -49,9 +49,10 @@ body {
 /* header */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 6.5rem;
+  position: relative;
 }
 
 .header__nav-list {
@@ -89,6 +90,7 @@ body {
   padding: 0.5rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-right: auto;
 }
 
 .header__cta-button:hover {
@@ -102,5 +104,118 @@ body {
   font-size: 1rem;
   line-height: 120%;
   letter-spacing: 0em;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.burger-menu span {
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  margin: 0.3rem 0;
+  background: var(--secondary-color-2);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.burger-toggle:checked + .header__nav + .burger-menu span:nth-child(1) {
+  transform: translateY(0.55rem) rotate(45deg);
+}
+
+.burger-toggle:checked + .header__nav + .burger-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-toggle:checked + .header__nav + .burger-menu span:nth-child(3) {
+  transform: translateY(-0.55rem) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #090f1d;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transform: translateY(-200%);
+    opacity: 0;
+    transform: translateY(-30px);
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.4, 2, 0.6, 1),
+      transform 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+    z-index: 1001;
+  }
+
+  .burger-toggle:checked + .header__nav {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .header__nav-item:not(:last-child) {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .header__nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .burger-menu {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__nav-list {
+    width: 100%;
+  }
+}
+
+@media (min-width: 901px) {
+  .burger-menu,
+  .burger-toggle {
+    display: none !important;
+  }
+
+  .header__nav {
+    position: static;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    background: none;
+    box-shadow: none;
+    display: block;
+  }
+
+  .header__nav-list {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
 }
 /* /header */
