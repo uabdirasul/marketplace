@@ -10,10 +10,6 @@
 
 <body>
   <header class="header container">
-    <button class="header__cta-button" type="button">
-      <span>Contact</span>
-    </button>
-    <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden>
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
@@ -30,12 +26,15 @@
         </li>
       </ul>
     </nav>
-    <label for="burger-toggle" class="burger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+    <button class="header__cta-button" type="button">
+      <span>Contact</span>
+    </button>
+    <button class="header__burger-menu-button">
+      <img src="/images/burger-menu.svg" alt="burger menu icon" class="header__burger-menu-icon" width="30" height="30">
+    </button>
   </header>
+
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
