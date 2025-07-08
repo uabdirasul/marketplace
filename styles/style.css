@@ -528,7 +528,6 @@ body {
   font-weight: 500;
   font-style: Medium;
   font-size: clamp(2rem, 5vw, 3rem);
-  line-height: clamp(2rem, 5vh, 3.6rem);
   letter-spacing: 0px;
   vertical-align: middle;
   margin-bottom: 1rem;
@@ -549,6 +548,7 @@ body {
 .create-nft__buttons {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 
 .create-nft__button {
