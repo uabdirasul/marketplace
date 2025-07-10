@@ -592,3 +592,148 @@ body {
   }
 }
 /* /create-nft */
+
+/* popular-artists */
+.popular-artists {
+}
+
+.popular-artists__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: var(--secondary-color-2);
+  margin-bottom: 2rem;
+}
+
+.popular-artists__title {
+  max-width: 19.5rem;
+  font-family: Canela, sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  text-align: center;
+  line-height: 3.6rem;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.popular-artists__button {
+  padding: 0.75rem 2rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.popular-artists__button-link {
+  text-decoration: none;
+  color: var(--secondary-color-2);
+}
+
+.popular-artists__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  grid-template-areas:
+    "item1 item1 item1 item2 item2 item2 item2 item2 item3 item3 item3 item3"
+    "item4 item4 item4 item4 item5 item5 item5 item5 item3 item3 item3 item3";
+}
+
+.popular-artists__item {
+  position: relative;
+}
+
+.popular-artists__grid > .popular-artists__item:nth-child(1) {
+  grid-area: item1;
+}
+
+.popular-artists__grid > .popular-artists__item:nth-child(2) {
+  grid-area: item2;
+}
+
+.popular-artists__grid > .popular-artists__item:nth-child(3) {
+  grid-area: item3;
+}
+
+.popular-artists__grid > .popular-artists__item:nth-child(4) {
+  grid-area: item4;
+}
+
+.popular-artists__grid > .popular-artists__item:nth-child(5) {
+  grid-area: item5;
+}
+
+/* Tablet (768px and down) */
+@media (max-width: 768px) {
+  .popular-artists__grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "item1 item1 item1 item2 item2 item2"
+      "item3 item3 item3 item4 item4 item4"
+      "item5 item5 item5 item5 item5 item5";
+  }
+
+  .popular-artists__cta {
+    flex-direction: column;
+  }
+
+  .popular-artists__button {
+    width: 100%;
+  }
+}
+
+/* Mobile (e.g. 480px and down) */
+@media (max-width: 600px) {
+  .popular-artists__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+    gap: 1rem;
+  }
+}
+
+.popular-artists__info {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  color: #fffffd;
+}
+
+.popular-artists__profile-image {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.popular-artists__owner {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  letter-spacing: 0px;
+}
+
+.popular-artists__name {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0px;
+}
+
+.popular-artists__image {
+  border-radius: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* /popular-artists */
