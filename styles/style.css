@@ -93,14 +93,7 @@ body {
   padding: 0.5rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.header__cta-button:hover {
-  background-color: #c5d800;
-}
-
-.header__cta-button span {
-  color: var(--secondary-color-2);
+  color: #474747;
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -108,9 +101,14 @@ body {
   letter-spacing: 0em;
 }
 
+.header__cta-button:hover {
+  background-color: #c5d800;
+}
+
 .header__burger-menu-button {
   display: none;
   background: var(--primary-color);
+  color: #474747;
   border: none;
   border-radius: 4px;
 }
@@ -186,7 +184,7 @@ body {
 }
 
 .hero-texts {
-  max-width: 100%;
+  max-width: 40rem;
   flex: 1;
   padding: 1rem;
   display: flex;
@@ -231,21 +229,6 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.hero__yellow-button {
-  background-color: var(--primary-color);
-}
-
-.hero__button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.hero__yellow-button:hover {
-  background-color: #c5d800;
-}
-
-.hero__button-text {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -254,6 +237,19 @@ body {
   letter-spacing: 0px;
   color: var(--secondary-color-2);
   text-decoration: none;
+}
+
+.hero__yellow-button {
+  background-color: var(--primary-color);
+  color: #474747;
+}
+
+.hero__button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero__yellow-button:hover {
+  background-color: #c5d800;
 }
 
 .hero__stats {
@@ -298,8 +294,7 @@ body {
 
 .hero__image {
   width: 100%;
-  max-width: 36rem;
-  flex: 1;
+  max-width: 40rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -315,10 +310,6 @@ body {
 
   .hero__stats {
     justify-content: center;
-  }
-
-  .hero__image {
-    margin-bottom: 2rem;
   }
 
   .hero__stats-items:not(:last-child) {
@@ -350,7 +341,6 @@ body {
 .featured-art__heading {
   font-family: Canela, sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: clamp(1.2rem, 5vw, 3rem);
   line-height: 3.6rem;
   letter-spacing: 0px;
@@ -361,7 +351,6 @@ body {
 .featured-art__button {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
@@ -371,11 +360,8 @@ body {
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
   cursor: pointer;
-}
-
-.featured-art__button a {
   text-decoration: none;
-  color: var(--secondary-color-2);
+  color: #474747;
 }
 
 .featured-art__collections {
@@ -389,7 +375,7 @@ body {
   width: clamp(16rem, 100%, 26rem);
   padding: 1rem;
   border-radius: 1.75rem;
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid #ababab;
 }
 
 .featured-art__image {
@@ -408,7 +394,6 @@ body {
 .featured-art__title {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   line-height: 1.8rem;
   letter-spacing: 0px;
 }
@@ -426,7 +411,6 @@ body {
 .featured-art__price span {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
@@ -442,7 +426,6 @@ body {
 .featured-art__remained-time-text {
   font-family: Inter, sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 0.875rem;
   line-height: 1.4rem;
   letter-spacing: 0px;
@@ -462,7 +445,6 @@ body {
 .featured-art__remained-time-value span {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
@@ -474,14 +456,10 @@ body {
   border: 2px solid var(--primary-color);
   border-radius: 0.5rem;
   cursor: pointer;
-}
-
-.featured-art__bidding-button a {
   text-decoration: none;
   color: var(--primary-color);
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
@@ -526,7 +504,6 @@ body {
 .create-nft__title {
   font-family: Canela, sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0px;
   vertical-align: middle;
@@ -536,7 +513,6 @@ body {
 .create-nft__info {
   font-family: Inter, sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: clamp(0.7rem, 5vw, 1rem);
   line-height: 1.6rem;
   letter-spacing: 0px;
@@ -552,25 +528,22 @@ body {
 }
 
 .create-nft__button {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: transparent;
   border-radius: 0.5rem;
-}
-
-.create-nft__yellow-button {
-  background-color: var(--primary-color);
-}
-
-.create-nft__button-link {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
   vertical-align: middle;
   text-decoration: none;
   color: var(--secondary-color-2);
+}
+
+.create-nft__yellow-button {
+  background-color: var(--primary-color);
+  color: #474747;
 }
 
 @media screen and (max-width: 768px) {
@@ -624,10 +597,9 @@ body {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-}
-.popular-artists__button-link {
   text-decoration: none;
-  color: var(--secondary-color-2);
+  color: #474747;
+  text-align: center;
 }
 
 .popular-artists__grid {
@@ -804,7 +776,7 @@ body {
 .newsletter__button {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
-  color: var(--secondary-color-2);
+  color: #474747;
   border: none;
   padding: 0.7rem 1.5rem;
 }
@@ -853,7 +825,6 @@ body {
 .footer__slogan {
   font-family: Inter;
   font-weight: 400;
-  font-style: Regular;
   font-size: 1rem;
   line-height: 160%;
   letter-spacing: 0px;

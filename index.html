@@ -3,6 +3,43 @@
 
 <head>
   <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Discover and collect the most unique NFTs and digital art from top artists. Secure and easy-to-use NFT marketplace.">
+  <meta name="keywords" content="NFT, digital art, crypto art, NFT marketplace, blockchain art, artists, collections">
+  <meta name="author" content="uabdrasul">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Marketplace Mock Website Sample">
+  <meta property="og:description" content="Explore, collect, and trade digital NFTs and art from top creators.">
+  <meta property="og:image" content="https://example.com/images/og-image.webp">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marketplace Mock Website Sample">
+  <meta name="twitter:description" content="Explore, collect, and trade digital NFTs and art from top creators.">
+  <meta name="twitter:image" content="https://example.com/images/twitter-card.webp">
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Preload key assets (example) -->
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/images/hero-img.webp" as="image">
+
+  <!-- Viewport fallback (already exists, kept for clarity) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketplace Mock Website Sample</title>
   <link rel="stylesheet" href="/styles/style.css">
@@ -26,9 +63,9 @@
         </li>
       </ul>
     </nav>
-    <button class="header__cta-button" type="button">
-      <span>Contact</span>
-    </button>
+    <a class="header__cta-button">
+      Contact
+    </a>
     <button class="header__burger-menu-button">
       <img src="/images/burger-menu.svg" alt="burger menu icon" class="header__burger-menu-icon" width="30" height="30">
     </button>
@@ -38,36 +75,38 @@
     <!-- hero -->
     <section class="hero">
       <div class="hero-texts">
-        <h1 class="hero__header">Discover and Collect The Best NFTs <span class="header__text-yellow">DigitalArt.</span>
+        <h1 class="hero__header">
+          Discover and Collect The Best NFTs <span class="header__text-yellow">Digital Art.</span>
         </h1>
         <p class="hero__description">Get started with the easiest and most secure platform to buy and trade digital ART
-          and NFT’s. Start exploringthe world of digital art and NFTs today and take control of your digital assets with
+          and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets
+          with
           confidence!</p>
         <div class="hero__buttons">
-          <button type="button" class="hero__button hero__yellow-button">
-            <a href="#" class="hero__button-text">Explore now</a>
-          </button>
-          <button type="button" class="hero__button">
-            <a href="#" class="hero__button-text">Learn more</a>
-          </button>
+          <a class="hero__button hero__yellow-button">
+            Explore now
+          </a>
+          <a class="hero__button">
+            Learn more
+          </a>
         </div>
         <div class="hero__stats">
           <div class="hero__stats-items">
             <p class="hero__stats-items-text">8.9<span class="hero__k-mark">K</span></p>
-            <h3 class="hero__stats-headings">Art work</h3>
+            <h2 class="hero__stats-headings">Art work</h2>
           </div>
           <div class="hero__stats-items">
             <p class="hero__stats-items-text">65<span class="hero__k-mark">K</span></p>
-            <h3 class="hero__stats-headings">Artist</h3>
+            <h2 class="hero__stats-headings">Artist</h2>
           </div>
           <div class="hero__stats-items">
             <p class="hero__stats-items-text">87<span class="hero__k-mark">K</span></p>
-            <h3 class="hero__stats-headings">Collection</h3>
+            <h2 class="hero__stats-headings">Collection</h2>
           </div>
         </div>
       </div>
-      <img src="images/hero-img.png" alt="woman with modern glasses" class="hero__image"
-        srcset="images/hero-img.png 1x, images/hero-img@2x.png 2x">
+      <img src="images/hero-img.webp" alt="woman with modern glasses" class="hero__image"
+        srcset="images/hero-img.webp 1x, images/hero-img@2x.webp 2x" fetchpriority="high" width="575" height="637">
     </section>
     <!-- /hero -->
 
@@ -77,14 +116,14 @@
         <h2 class="featured-art__heading">
           <span class="yellow-text">Amazing</span> and Super Unique Art of This <span class="yellow-text">Week</span>
         </h2>
-        <button class="featured-art__button">
-          <a href="#">See all</a>
-        </button>
+        <a class="featured-art__button">
+          See all
+        </a>
       </div>
       <div class="featured-art__collections">
         <div class="featured-art__item">
-          <img src="/images/art-collection-image1.jpg" alt="game character" class="featured-art__image"
-            srcset="/images/art-collection-image1.jpg 1x, /images/art-collection-image1@2x.jpg 2x">
+          <img src="/images/art-collection-image1.webp" alt="game character" class="featured-art__image"
+            srcset="/images/art-collection-image1.webp 1x, /images/art-collection-image1@2x.webp 2x">
 
           <div class="featured-art__title-info">
             <h3 class="featured-art__title">Cyberpunk Cocomo</h3>
@@ -102,15 +141,15 @@
                 <span>03:24:56</span>
               </p>
             </div>
-            <button class="featured-art__bidding-button">
-              <a href="#">Place a bid</a>
-            </button>
+            <a class="featured-art__bidding-button">
+              Place a bid
+            </a>
           </div>
         </div>
 
         <div class="featured-art__item">
-          <img src="/images/art-collection-image2.jpg" alt="game character" class="featured-art__image"
-            srcset="/images/art-collection-image2.jpg 1x, /images/art-collection-image2@2x.jpg 2x">
+          <img src="/images/art-collection-image2.webp" alt="game character" class="featured-art__image"
+            srcset="/images/art-collection-image2.webp 1x, /images/art-collection-image2@2x.webp 2x">
 
           <div class="featured-art__title-info">
             <h3 class="featured-art__title">Charge, Qi tiao yu</h3>
@@ -128,15 +167,15 @@
                 <span>03:24:56</span>
               </p>
             </div>
-            <button class="featured-art__bidding-button">
-              <a href="#">Place a bid</a>
-            </button>
+            <a class="featured-art__bidding-button">
+              Place a bid
+            </a>
           </div>
         </div>
 
         <div class="featured-art__item">
-          <img src="/images/art-collection-image3.jpg" alt="game character" class="featured-art__image"
-            srcset="/images/art-collection-image3.jpg 1x, /images/art-collection-image3@2x.jpg 2x">
+          <img src="/images/art-collection-image3.webp" alt="game character" class="featured-art__image"
+            srcset="/images/art-collection-image3.webp 1x, /images/art-collection-image3@2x.webp 2x">
 
           <div class="featured-art__title-info">
             <h3 class="featured-art__title">Surgeon, Josh Rife</h3>
@@ -154,9 +193,9 @@
                 <span>03:24:56</span>
               </p>
             </div>
-            <button class="featured-art__bidding-button">
-              <a href="#">Place a bid</a>
-            </button>
+            <a class="featured-art__bidding-button">
+              Place a bid
+            </a>
           </div>
         </div>
       </div>
@@ -174,16 +213,16 @@
           confidence!
         </div>
         <div class="create-nft__buttons">
-          <button class="create-nft__button create-nft__yellow-button">
-            <a href="#" class="create-nft__button-link">Create Now</a>
-          </button>
-          <button class="create-nft__button">
-            <a href="#" class="create-nft__button-link">Learn more</a>
-          </button>
+          <a class="create-nft__button create-nft__yellow-button">
+            Create Now
+          </a>
+          <a class="create-nft__button">
+            Learn more
+          </a>
         </div>
       </div>
-      <img src="/images/create-nft-img.png" alt="game characters" class="create-nft__img"
-        srcset="/images/create-nft-img.png 1x, /images/create-nft-img.png 2x" width="740" height="560">
+      <img src="/images/create-nft-img.webp" alt="game characters" class="create-nft__img"
+        srcset="/images/create-nft-img.webp 1x, /images/create-nft-img.webp 2x" width="740" height="560">
     </section>
     <!-- /create-nft -->
 
@@ -193,20 +232,21 @@
         <h2 class="popular-artists__title">
           Popular <span class="yellow-text">Artists</span> On This Week
         </h2>
-        <button class="popular-artists__button">
-          <a href="#" class="popular-artists__button-link">See All</a>
-        </button>
+        <a class="popular-artists__button">
+          See All
+        </a>
       </div>
 
       <div class="popular-artists__grid">
         <div class="popular-artists__item">
-          <img src="images/popular-artists-img1.jpg" alt="game character face" class="popular-artists__image"
-            srcset="images/popular-artists-img1.jpg 1x, images/popular-artists-img1@2x.jpg 2x" width="300" height="300">
+          <img src="images/popular-artists-img1.webp" alt="game character face" class="popular-artists__image"
+            srcset="images/popular-artists-img1.webp 1x, images/popular-artists-img1@2x.webp 2x" width="300"
+            height="300">
 
           <div class="popular-artists__info">
-            <img src="images/popular-artists-profile-img1.jpg" alt="create profile photo face"
+            <img src="images/popular-artists-profile-img1.webp" alt="create profile photo face"
               class="popular-artists__profile-image"
-              srcset="images/popular-artists-profile-img1.jpg 1x, images/popular-artists-profile-img1@2x.jpg 2x"
+              srcset="images/popular-artists-profile-img1.webp 1x, images/popular-artists-profile-img1@2x.webp 2x"
               width="48" height="48">
             <div class="popular-artists__details">
               <p class="popular-artists__owner">Owner</p>
@@ -216,13 +256,14 @@
         </div>
 
         <div class="popular-artists__item">
-          <img src="images/popular-artists-img2.jpg" alt="game character face" class="popular-artists__image"
-            srcset="images/popular-artists-img2.jpg 1x, images/popular-artists-img2@2x.jpg 2x" width="520" height="311">
+          <img src="images/popular-artists-img2.webp" alt="game character face" class="popular-artists__image"
+            srcset="images/popular-artists-img2.webp 1x, images/popular-artists-img2@2x.webp 2x" width="520"
+            height="311">
 
           <div class="popular-artists__info">
-            <img src="images/popular-artists-profile-img2.jpg" alt="create profile photo face"
+            <img src="images/popular-artists-profile-img2.webp" alt="create profile photo face"
               class="popular-artists__profile-image"
-              srcset="images/popular-artists-profile-img2.jpg 1x, images/popular-artists-profile-img2@2x.jpg 2x"
+              srcset="images/popular-artists-profile-img2.webp 1x, images/popular-artists-profile-img2@2x.webp 2x"
               width="48" height="48">
             <div class="popular-artists__details">
               <p class="popular-artists__owner">Owner</p>
@@ -234,13 +275,14 @@
         </div>
 
         <div class="popular-artists__item">
-          <img src="images/popular-artists-img3.jpg" alt="game character face" class="popular-artists__image"
-            srcset="images/popular-artists-img3.jpg 1x, images/popular-artists-img3@2x.jpg 2x" width="410" height="652">
+          <img src="images/popular-artists-img3.webp" alt="game character face" class="popular-artists__image"
+            srcset="images/popular-artists-img3.webp 1x, images/popular-artists-img3@2x.webp 2x" width="410"
+            height="652">
 
           <div class="popular-artists__info">
-            <img src="images/popular-artists-profile-img3.jpg" alt="create profile photo face"
+            <img src="images/popular-artists-profile-img3.webp" alt="create profile photo face"
               class="popular-artists__profile-image"
-              srcset="images/popular-artists-profile-img3.jpg 1x, images/popular-artists-profile-img3@2x.jpg 2x"
+              srcset="images/popular-artists-profile-img3.webp 1x, images/popular-artists-profile-img3@2x.webp 2x"
               width="48" height="48">
             <div class="popular-artists__details">
               <p class="popular-artists__owner">Owner</p>
@@ -250,13 +292,14 @@
         </div>
 
         <div class="popular-artists__item">
-          <img src="images/popular-artists-img4.jpg" alt="game character face" class="popular-artists__image"
-            srcset="images/popular-artists-img4.jpg 1x, images/popular-artists-img4@2x.jpg 2x" width="410" height="311">
+          <img src="images/popular-artists-img4.webp" alt="game character face" class="popular-artists__image"
+            srcset="images/popular-artists-img4.webp 1x, images/popular-artists-img4@2x.webp 2x" width="410"
+            height="311">
 
           <div class="popular-artists__info">
-            <img src="images/popular-artists-profile-img4.jpg" alt="create profile photo face"
+            <img src="images/popular-artists-profile-img4.webp" alt="create profile photo face"
               class="popular-artists__profile-image"
-              srcset="images/popular-artists-profile-img4.jpg 1x, images/popular-artists-profile-img4@2x.jpg 2x"
+              srcset="images/popular-artists-profile-img4.webp 1x, images/popular-artists-profile-img4@2x.webp 2x"
               width="48" height="48">
             <div class="popular-artists__details">
               <p class="popular-artists__owner">Owner</p>
@@ -266,13 +309,14 @@
         </div>
 
         <div class="popular-artists__item">
-          <img src="images/popular-artists-img5.jpg" alt="game character face" class="popular-artists__image"
-            srcset="images/popular-artists-img5.jpg 1x, images/popular-artists-img5@2x.jpg 2x" width="410" height="311">
+          <img src="images/popular-artists-img5.webp" alt="game character face" class="popular-artists__image"
+            srcset="images/popular-artists-img5.webp 1x, images/popular-artists-img5@2x.webp 2x" width="410"
+            height="311">
 
           <div class="popular-artists__info">
-            <img src="images/popular-artists-profile-img5.jpg" alt="create profile photo face"
+            <img src="images/popular-artists-profile-img5.webp" alt="create profile photo face"
               class="popular-artists__profile-image"
-              srcset="images/popular-artists-profile-img5.jpg 1x, images/popular-artists-profile-img5@2x.jpg 2x"
+              srcset="images/popular-artists-profile-img5.webp 1x, images/popular-artists-profile-img5@2x.webp 2x"
               width="48" height="48">
             <div class="popular-artists__details">
               <p class="popular-artists__owner">Owner</p>
@@ -280,13 +324,14 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- /popular-artists -->
 
     <!-- newsletter -->
     <section class="newsletter">
-      <img src="images/newsletter-image.png" alt="two game characters" class="newsletter__image"
-        srcset="images/newsletter-image.png 1x, images/newsletter-image@2x.png 2x" width="630" height="458">
+      <img src="images/newsletter-image.webp" alt="two game characters" class="newsletter__image"
+        srcset="images/newsletter-image.webp 1x, images/newsletter-image@2x.webp 2x" width="630" height="458">
       <div class="newsletter__content">
         <h2 class="newsletter__title">
           Subscribe And <span class="yellow-text">get our Updates</span> Every Week
@@ -312,22 +357,22 @@
         <ul class="footer__socials-list">
           <li class="footer__socials-item">
             <a href="#" class="footer__socials-link">
-              <img src="/images/facebook-icon.svg" alt="facebook icon" color="#fff" width="24" height="24">
+              <img src="/images/facebook-icon.svg" alt="facebook icon" width="24" height="24">
             </a>
           </li>
           <li class="footer__socials-item">
             <a href="#" class="footer__socials-link">
-              <img src="/images/telegram-icon.svg" alt="telegram icon" color="#fff" width="24" height="24">
+              <img src="/images/telegram-icon.svg" alt="telegram icon" width="24" height="24">
             </a>
           </li>
           <li class="footer__socials-item">
             <a href="#" class="footer__socials-link">
-              <img src="/images/twitter-icon.svg" alt="twitter icon" color="#fff" width="24" height="24">
+              <img src="/images/twitter-icon.svg" alt="twitter icon" width="24" height="24">
             </a>
           </li>
           <li class="footer__socials-item">
             <a href="#" class="footer__socials-link">
-              <img src="/images/linkedin-icon.svg" alt="linkedin icon" color="#fff" width="24" height="24">
+              <img src="/images/linkedin-icon.svg" alt="linkedin icon" width="24" height="24">
             </a>
           </li>
         </ul>
@@ -335,7 +380,7 @@
 
       <div class="footer__links">
         <div class="footer__links-row">
-          <h4 class="footer__links-heading">Explore</h4>
+          <h3 class="footer__links-heading">Explore</h3>
           <ul class="footer__links-list">
             <li class="footer__links-item">
               <a class="footer__link" href="#">Art Sign In</a>
@@ -353,7 +398,7 @@
         </div>
 
         <div class="footer__links-row">
-          <h4 class="footer__links-heading">Statistic</h4>
+          <h3 class="footer__links-heading">Statistic</h3>
           <ul class="footer__links-list">
             <li class="footer__links-item">
               <a class="footer__link" href="#">Ranking</a>
@@ -368,7 +413,7 @@
         </div>
 
         <div class="footer__links-row">
-          <h4 class="footer__links-heading">Company</h4>
+          <h3 class="footer__links-heading">Company</h3>
           <ul class="footer__links-list">
             <li class="footer__links-item">
               <a class="footer__link" href="#">About Us</a>
@@ -386,7 +431,7 @@
         </div>
 
         <div class="footer__links-row">
-          <h4 class="footer__links-heading">Resources</h4>
+          <h3 class="footer__links-heading">Resources</h3>
           <ul class="footer__links-list">
             <li class="footer__links-item">
               <a class="footer__link" href="#">Help Center</a>
