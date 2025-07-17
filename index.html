@@ -33,6 +33,7 @@
   <meta name="theme-color" content="#000000">
 
   <link rel="preload" href="/fonts/Inter_18pt-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Canela-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="/images/hero-img.webp"
     imagesrcset="/images/hero-img.webp 1x, /images/hero-img@2x.webp 2x" imagesizes="100vw">
 
@@ -101,8 +102,8 @@
           </div>
         </div>
       </div>
-      <img src="images/hero-img.webp" alt="woman with modern glasses" class="hero__image"
-        srcset="images/hero-img.webp 1x, images/hero-img@2x.webp 2x" fetchpriority="high" width="575" height="637">
+      <img fetchpriority="high" src="images/hero-img.webp" alt="woman with modern glasses" class="hero__image"
+        srcset="images/hero-img.webp 1x, images/hero-img@2x.webp 2x" width="575" height="637">
     </section>
     <!-- /hero -->
 
@@ -454,7 +455,7 @@
     </div>
   </footer>
 
-  <script src="scripts/index.js"></script>
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
