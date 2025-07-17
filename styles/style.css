@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Canela";
-  src: url("/fonts/Canela-Medium-Trial.ttf") format("truetype");
+  src: url("/fonts/Canela-Medium-Trial.woff2") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Jost";
-  src: url("/fonts/Jost-Regular.ttf") format("truetype");
+  src: url("/fonts/Jost-Regular.woff2") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
+  src: url("/fonts/Inter_18pt-Regular.woff2") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -186,7 +186,6 @@ body {
 .hero-texts {
   max-width: 40rem;
   flex: 1;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
