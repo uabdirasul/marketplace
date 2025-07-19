@@ -21,8 +21,9 @@
 
 :root {
   --primary-color: #d6ef0e;
-  --secondary-color-1: #1e1e1e;
-  --secondary-color-2: #ffffff;
+  --secondary-color: #ffffff;
+  --white-text-color: #ffffff;
+  --black-text-color: #474747;
 }
 
 * {
@@ -82,7 +83,7 @@ body {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0px;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -93,7 +94,7 @@ body {
   padding: 0.5rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  color: #474747;
+  color: var(--black-text-color);
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -108,7 +109,7 @@ body {
 .header__burger-menu-button {
   display: none;
   background: var(--primary-color);
-  color: #474747;
+  color: var(--black-text-color);
   border: none;
   border-radius: 4px;
 }
@@ -161,7 +162,7 @@ body {
     display: block;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white-text-color);
     font-weight: 500;
     transition: background-color 0.2s ease, color 0.2s ease;
     border-radius: 4px;
@@ -171,20 +172,28 @@ body {
 
 /* /header */
 
-/* hero */
+/* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 5rem 0;
+}
+/* .main */
+
 /* hero */
 .hero {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: var(--secondary-color-2);
-  padding: 2rem 0;
+  color: var(--secondary-color);
+  padding: 1rem 0;
   gap: 2rem;
 }
 
 .hero-texts {
-  max-width: 40rem;
+  max-width: 35rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -198,7 +207,7 @@ body {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: clamp(2.5rem, 6vw, 4.8rem);
   letter-spacing: 0rem;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .header__text-yellow {
@@ -212,7 +221,7 @@ body {
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.6rem;
   letter-spacing: 0px;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .hero__buttons {
@@ -234,13 +243,13 @@ body {
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0px;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .hero__yellow-button {
   background-color: var(--primary-color);
-  color: #474747;
+  color: var(--black-text-color);
 }
 
 .hero__button:hover {
@@ -276,7 +285,7 @@ body {
 }
 
 .hero__k-mark {
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .hero__stats-items:not(:last-child) {
@@ -288,7 +297,7 @@ body {
   font-weight: 400;
   font-size: clamp(0.9rem, 1.8vw, 1rem);
   line-height: 1.6rem;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .hero__image {
@@ -326,8 +335,7 @@ body {
 
 /* featured-art */
 .featured-art {
-  color: var(--secondary-color-2);
-  margin-bottom: 10rem;
+  color: var(--secondary-color);
 }
 
 .featured-art__cta {
@@ -360,7 +368,7 @@ body {
   padding: 0.75rem 2rem;
   cursor: pointer;
   text-decoration: none;
-  color: #474747;
+  color: var(--black-text-color);
 }
 
 .featured-art__collections {
@@ -492,11 +500,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10rem;
 }
 
 .create-nft__content {
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
   max-width: 26rem;
 }
 
@@ -516,7 +523,7 @@ body {
   line-height: 1.6rem;
   letter-spacing: 0px;
   vertical-align: middle;
-  color: #fffffd;
+  color: var(--white-text-color);
   margin-bottom: 1.5rem;
 }
 
@@ -537,12 +544,12 @@ body {
   letter-spacing: 0px;
   vertical-align: middle;
   text-decoration: none;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
 }
 
 .create-nft__yellow-button {
   background-color: var(--primary-color);
-  color: #474747;
+  color: var(--black-text-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -567,7 +574,6 @@ body {
 
 /* popular-artists */
 .popular-artists {
-  margin-bottom: 10rem;
 }
 
 .popular-artists__cta {
@@ -575,7 +581,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
   margin-bottom: 2rem;
 }
 
@@ -597,7 +603,7 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none;
-  color: #474747;
+  color: var(--black-text-color);
   text-align: center;
 }
 
@@ -676,7 +682,7 @@ body {
   margin: 1rem;
   display: flex;
   align-items: center;
-  color: #fffffd;
+  color: var(--white-text-color);
 }
 
 .popular-artists__profile-image {
@@ -713,18 +719,16 @@ body {
 .newsletter {
   display: flex;
   gap: 2rem;
-  margin-bottom: 5rem;
   justify-content: space-between;
 }
 
 .newsletter__image {
-  width: 100%;
-  height: 100%;
+  width: 50%;
 }
 
 .newsletter__content {
   max-width: 32.5rem;
-  color: #fffffd;
+  color: var(--white-text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -762,7 +766,7 @@ body {
 .newsletter__input {
   background-color: transparent;
   border: none;
-  color: #fffffd;
+  color: var(--white-text-color);
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
@@ -775,7 +779,7 @@ body {
 .newsletter__button {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
-  color: #474747;
+  color: var(--black-text-color);
   border: none;
   padding: 0.7rem 1.5rem;
 }
@@ -794,7 +798,7 @@ body {
 
 /* footer */
 .footer {
-  color: #fffffd;
+  color: var(--white-text-color);
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -828,7 +832,7 @@ body {
   line-height: 160%;
   letter-spacing: 0px;
   vertical-align: middle;
-  color: #fffffd;
+  color: var(--white-text-color);
 }
 
 .footer__socials-list {
@@ -840,7 +844,7 @@ body {
 
 .footer__socials-item {
   list-style-type: none;
-  background-color: var(--secondary-color-2);
+  background-color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -896,7 +900,7 @@ body {
   line-height: 160%;
   letter-spacing: 0px;
   vertical-align: middle;
-  color: #fffffd;
+  color: var(--white-text-color);
 }
 
 .footer__copyrights {
@@ -916,7 +920,7 @@ body {
 
 .footer__document-link {
   text-decoration: none;
-  color: #fffffd;
+  color: var(--white-text-color);
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 1rem;
