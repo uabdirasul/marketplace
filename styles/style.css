@@ -264,8 +264,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .hero__stats-items {
@@ -274,6 +273,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  width: 33%;
 }
 
 .hero__stats-items-text {
