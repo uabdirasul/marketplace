@@ -162,7 +162,7 @@ body {
     display: block;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
-    color: var(--white-text-color);
+    color: var(--black-text-color);
     font-weight: 500;
     transition: background-color 0.2s ease, color 0.2s ease;
     border-radius: 4px;
@@ -179,6 +179,12 @@ body {
   gap: 10rem;
   padding: 5rem 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 3rem 0;
+  }
+}
 /* .main */
 
 /* hero */
@@ -188,7 +194,6 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--secondary-color);
-  padding: 1rem 0;
   gap: 2rem;
 }
 
@@ -309,7 +314,6 @@ body {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 2rem 0;
   }
 
   .hero__buttons {
@@ -328,7 +332,6 @@ body {
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
-    margin: 1rem 0;
   }
 }
 /* /hero */
@@ -349,7 +352,7 @@ body {
   font-family: Canela, sans-serif;
   font-weight: 500;
   font-size: clamp(1.2rem, 5vw, 3rem);
-  line-height: 3.6rem;
+  line-height: 120%;
   letter-spacing: 0px;
   vertical-align: middle;
   width: clamp(20rem, 100%, 32rem);
@@ -383,6 +386,9 @@ body {
   padding: 1rem;
   border-radius: 1.75rem;
   border-top: 1px solid #ababab;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .featured-art__image {
@@ -395,7 +401,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .featured-art__title {
@@ -452,7 +457,7 @@ body {
 .featured-art__remained-time-value span {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 5vw, 1rem);
   line-height: 1.2rem;
   letter-spacing: 0px;
 }
@@ -481,18 +486,22 @@ body {
   .featured-art__heading {
     text-align: center;
     margin-bottom: 0.3rem;
-    line-height: 2rem;
   }
+}
 
-  .featured-art__button {
-    width: 100%;
-  }
-
+@media screen and (max-width: 900px) {
   .featured-art__collections {
     flex-direction: column;
     align-items: center;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .featured-art__bidding-button {
+    padding: 0.2rem;
+  }
+}
+
 /* /featured-art */
 
 /* create-nft */
@@ -798,6 +807,7 @@ body {
 
 /* footer */
 .footer {
+  padding-top: 1rem;
   color: var(--white-text-color);
   display: flex;
   flex-direction: column;
