@@ -582,9 +582,6 @@ body {
 /* /create-nft */
 
 /* popular-artists */
-.popular-artists {
-}
-
 .popular-artists__cta {
   display: flex;
   justify-content: space-between;
