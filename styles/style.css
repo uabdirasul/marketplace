@@ -796,6 +796,15 @@ body {
     align-items: center;
   }
 
+  .newsletter__input {
+    width: 100%;
+    padding-left: 0.4rem;
+  }
+
+  .newsletter__button {
+    padding: 0.5rem;
+  }
+
   .newsletter__title {
     line-height: 120%;
   }
